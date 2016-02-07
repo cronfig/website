@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<!--
+	Fractal by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cronfig - the cron microservice</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<h1><a href="#">Cronfig</a></h1>
+					<p>Simple cron microservice<br />
+					to run your Mautic background jobs<br />
+					<small>[Public Beta]</small></p>
+					<ul class="actions">
+						<li><a href="https://cronfig.mautic.com/asset/1:mautic-cronfig-plugin" class="button special icon fa-download">Download</a></li>
+						<li><a href="#one" class="button icon fa-chevron-down scrolly">Learn More</a></li>
+					</ul>
+				</div>
+				<div class="image phone"><div class="inner"><img src="images/screen.png" alt="" /></div></div>
+			</header>
+
+		<!-- One -->
+			<section id="one" class="wrapper style2 special">
+				<header class="major">
+					<h2>Cronfig is an API server and a Mautic plugin.<br />
+					All the cron task configuration is made comfortably inside your Mautic instance.</h2>
+				</header>
+				<p>Cronfig can solve the cron job configuration problem and provide more helpful features.</p>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper">
+				<div class="inner alt">
+					<section class="spotlight">
+						<div class="image"><img src="images/pic01.jpg" alt="" /></div>
+						<div class="content">
+							<h3>Cronfig is safe</h3>
+							<p>All communication between Cronfig.io and your Mautic is secured via HTTPS. The Mautic plugin provides public URL address to run the Mautic background tasks, but the plugin creates a unique hash on the first use so only Cronfig can access it.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/pic02.jpg" alt="" /></div>
+						<div class="content">
+							<h3>Cronfig is simple</h3>
+							<p>The authorization process was made as simple as possible. The Cronfig account requires only your email address. The Cronfig API key will be sent to that email address and you'll be able to log in to your Cronfig account in the Mautic - Cronfig plugin with that API key. Your Mautic will then remember the API key for future logins.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/pic03.jpg" alt="" /></div>
+						<div class="content">
+							<h3>Cronfig is free</h3>
+							<p>The basic usage is free forever. That requires 3 cron tasks which will run every 30 minutes. That is all you need for basic Mautic functionality. The plugin is open source (<a href="https://github.com/cronfig/mautic-cronfig"><i class="icon fa-github"></i></a>). Advanced plans will come soon.</p>
+						</div>
+					</section>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper style2">
+				<header class="major">
+					<h2>Get your Mautic-Cronfig plugin and make your Mautic alive</h2>
+				</header>
+				<div class="inner alt">
+					<section>
+						<h2>Plugin installation</h2>
+						<ol>
+							<li><a href="https://cronfig.mautic.com/asset/1:mautic-cronfig-plugin"><i class="icon fa-download"></i> Download</a> the plugin</li>
+							<li>Unzip the downloaded package.</li>
+							<li>Upload the unziped folder to the <code>plugins</code> folder. Make sure the plugin folder is also correctly named: <code>plugins/CronfigBundle</code>.</li>
+							<li>Clear Mautic's cache. Either run <code>app/console cache:clear</code> command in the Mautic's root dir or simply delete the content of <code>app/cache</code> dir.</li>
+							<li>Go to the right hand side Mautic menu (click the cog icon in the top right corner to slide the menu out) and go to <em>Plugins</em>.</li>
+							<li>Click the <em>Install/Upgrade Plugins</em> button. The Cronfig icon should appear in the list of plugins.</li>
+							<li>Go to the right hand side Mautic menu again. A new menu item called <em>Cronfig</em> should be there. Hit it. A register/login screan should appear.</li>
+							<li>Your email should be prefilled. Click on the <em>Register</em> button and check your email inbox. Your API key should appear in your inbox any second.</li>
+							<li>If you received the Cronfig registration email, copy the API key from it, insert it to the <em>Log in</em> input and log in.</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Cronfig configuration</h2>
+						<p>After successful installation create a Cronfig Account. All you need is an email address which is pre-filled from your Mautic user account for convinience. When you click the <i>Register</i> button, you'll get your API key to your inbox. Copy that API key and log in with it.</p>
+						<div class="image fit"><img src="images/cronfig-login.png" alt="Cronfig login/registration" /></div>
+						<p>When you log in, you'll see your account details and pre-defined tasks prepared for your Mautic instance. You can activate them with a click to the <i>Create</i> button.</p>
+						<div class="image fit"><img src="images/cronfig-predefined-tasks.png" alt="Cronfig pre-defined tasks" /></div>
+						<p>That's pretty much it. Then you can watch when the task will run and you'll see log of last 10 jobs. Each job shows details like when, how long it was runing, if the execution was succesful and what was the output.</p>
+						<div class="image fit"><img src="images/cronfig-jobs.png" alt="Cronfig runing tasks with jobs" /></div>
+					</section>
+					<section>
+						<h2>Contact us</h2>
+						<script type="text/javascript" src="https://cronfig.mautic.com/form/generate.js?id=1"></script>
+					</section>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Cronfig.io. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
