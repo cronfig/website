@@ -23,6 +23,7 @@
 
 	body {
 		line-height: 1;
+		-webkit-text-size-adjust: none;
 	}
 
 	ol, ul {
@@ -43,8 +44,8 @@
 		border-spacing: 0;
 	}
 
-	body {
-		-webkit-text-size-adjust: none;
+	small {
+		font-size: 70%;
 	}
 
 /* Box Model */
